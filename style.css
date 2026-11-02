@@ -313,3 +313,78 @@ body {
   color: #c62828;
   border: 1px solid #ef9a9a;
 }
+
+/* Style bổ sung thông tin tác giả */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.author-tag {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  padding: 6px 14px;
+}
+.author-name {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.3px;
+}
+.author-sub {
+  font-size: 0.72rem;
+  color: #dcedc8;
+  margin-top: 2px;
+}
+.footer-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+.footer-info {
+  margin-bottom: 14px;
+}
+.footer-author {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.footer-school, .footer-contact {
+  font-size: 0.9rem;
+  color: #e8f5e9;
+  margin-bottom: 4px;
+}
+.contact-link {
+  color: #ffe082;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px dashed #ffe082;
+  transition: color .2s;
+}
+.contact-link:hover {
+  color: #fff;
+}
+.footer-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 14px 0;
+}
+.footer-copy {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+@media (max-width: 768px) {
+  .header-right {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+  }
+  .author-tag {
+    display: none; /* Ẩn bớt trên mobile hẹp để tránh vỡ header, thông tin hiển thị đầy đủ ở chân trang */
+  }
+}
